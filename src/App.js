@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { Fragment } from 'react';
+import CountdownTimer from './components/countdownTimer/countdownTimer.component'
+import Footer from './components/footer/footer.component'
 
 function App() {
   return (
+    // we want to put all the elements in here the header the countdown timer and the footer links
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Fragment>
+        <h1>WE'RE LAUNCHING SOON</h1>
+        <CountdownTimer />
+        <Footer />
+      </Fragment>
     </div>
   );
 }
